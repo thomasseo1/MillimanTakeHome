@@ -1,0 +1,11 @@
+.boardSquare {
+	border: 6px solid;
+	border-image: linear-gradient(#00a562, #0078d4) 30;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
