@@ -1,4 +1,5 @@
 import { loadGameState } from "../loadGameState";
+import "@testing-library/jest-dom";
 
 describe("loadGameState function", () => {
   it("returns null when localStorage is empty", () => {
@@ -6,7 +7,6 @@ describe("loadGameState function", () => {
   });
 
   it("returns the loaded game state from localStorage", () => {
-    // Mock localStorage.getItem to return a stringified game state
     const gameState = {
       board: ["X", null, "O", "X", "O", null, null, null, null],
       xIsNext: true,
@@ -14,7 +14,6 @@ describe("loadGameState function", () => {
     };
     localStorage.setItem("ticTacToeGameState", JSON.stringify(gameState));
 
-    // Call loadGameState and expect it to return the parsed game state
     expect(loadGameState()).toEqual(gameState);
   });
 });

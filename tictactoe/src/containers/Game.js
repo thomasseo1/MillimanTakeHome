@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { calcWinner } from "../utils/calcWinner";
-import Board from "../containers/Board";
+import Board from "../components/Board";
 import { loadGameState } from "../utils/loadGameState";
 import { saveGameState } from "../utils/saveGameState";
 import "./styles/Game.scss";

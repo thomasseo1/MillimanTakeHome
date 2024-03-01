@@ -1,4 +1,5 @@
 import { calcWinner } from "../calcWinner";
+import "@testing-library/jest-dom";
 
 describe("calcWinner", () => {
   it("should return null for an empty board", () => {

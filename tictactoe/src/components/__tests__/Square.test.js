@@ -1,5 +1,6 @@
 import { render, fireEvent, screen } from "@testing-library/react";
 import Square from "../Square";
+import "@testing-library/jest-dom";
 
 describe("Square Component", () => {
   it("renders with value X", () => {
